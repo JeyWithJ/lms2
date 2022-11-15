@@ -1,0 +1,27 @@
+.customize-control-thim-customizer[data-thim-parent-control-type="thim-typography"] {
+  margin-bottom: 10px;
+
+  &.thim-w50{
+    width: 50%;
+  }
+
+  .customize-control-title {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}
+
+.customize-control-thim-customizer[data-thim-typography-css-prop="text-decoration"] {
+  margin-bottom: 15px;
+}
+
+.thim-typography-end {
+  margin-bottom: 8px;
+  margin-top: 8px;
+
+  hr {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}

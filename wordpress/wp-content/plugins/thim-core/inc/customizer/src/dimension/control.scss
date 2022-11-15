@@ -1,0 +1,22 @@
+.customize-control-thim-dimension{
+    .thim-control-form{
+        .thim-input-control{
+            +  .thim-control-label{
+                font-size: 10px;
+                font-weight: 500;
+                line-height: normal;
+                text-align: center;
+                text-transform: uppercase;
+                color: #777;
+                overflow-wrap: anywhere;
+            }
+        }
+    }
+
+	.thim-control-input{
+		padding: 0 8px;
+		line-height: 2;
+		min-height: 30px;
+		font-size: 14px;
+	}
+}

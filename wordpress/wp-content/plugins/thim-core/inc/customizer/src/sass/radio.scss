@@ -1,0 +1,122 @@
+
+.customize-control-thim-radio {
+	label {
+		display: list-item;
+		margin-bottom: 7px;
+		.option-description {
+			color: rgba(0, 0, 0, 0.35);
+			display: block;
+			font-size: 0.9em;
+			padding-left: 25px;
+		}
+	}
+}
+.customize-control-thim-radio-buttonset {
+	.buttonset {
+		display: flex;
+		flex-wrap: wrap;
+		.switch-label {
+			background: rgba(0, 0, 0, 0.1);
+			border: 1px rgba(0, 0, 0, 0.1);
+			color: #555d66;
+			flex-grow: 1;
+			margin: 0;
+			padding: 0.5em 1em;
+			text-align: center;
+		}
+		.switch-input {
+			&:checked {
+				+ {
+					.switch-label {
+						background-color: #00a0d2;
+						color: hsla(0, 0%, 100%, 0.8);
+					}
+				}
+			}
+		}
+	}
+	.screen-reader-text {
+		&:focus {
+			clip-path: inset(50%);
+			-webkit-clip-path: inset(50%);
+		}
+	}
+}
+.customize-control-thim-radio-image {
+	>.image {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	label {
+		display: inline-block;
+		position: relative;
+
+		.image-label {
+			background: hsla(0, 0%, 100%, 0.7);
+			display: none;
+			font-weight: 700;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			.inner {
+				height: 100%;
+				padding: 0.5em;
+				text-align: center;
+				vertical-align: middle;
+				width: 100%;
+			}
+		}
+
+		&:hover {
+			.image-label {
+				display: block;
+			}
+		}
+	}
+	input {
+		display: none;
+		+ label img {
+			border: 2px solid transparent;
+		}
+		&:checked {
+			+ {
+				label {
+					img {
+						border: 2px solid #007cba;
+						border-radius: 2px;
+					}
+				}
+			}
+		}
+		+ {
+			label {
+				.image-clickable {
+					bottom: 0;
+					height: 100%;
+					left: 0;
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 100%;
+				}
+			}
+		}
+	}
+	&.thim-col-4{
+		.image  label{
+			width: 25%;
+		}
+	}
+	&.thim-col-3{
+		.image label{
+			width: 33.33%;
+		}
+	}
+	&.thim-col-2{
+		.image  label{
+			width: 50%;
+		}
+	}
+}
